@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Antonio Verdú</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='styles.css'></script>
+    <link rel="icon" href="C:\Users\antov\Downloads\Black Grey Classic Minimalist Elegant Personal Monogram Logo (1).png" type="image/x-icon">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <a href="#" id="logo" title="Pulsar para refrescar">
+          <img src="C:\Users\antov\Downloads\Black Grey Classic Minimalist Elegant Personal Monogram Logo (1).png" alt="Logo" id="logo-img">
+        </a>
+        
+        <!-- Nombre justo a la derecha del logo -->
+        <div id="name">
+          <h1>Antonio Verdú</h1>
+        </div>
+
+        <div id="menu">
+            <a href="#about-me" class="oval">About me</a>
+            <a href="#projects" class="oval">Projects</a>
+            <a href="#cv" class="oval">CV</a>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="block">
+            <span class="word">Welcome!</span>
+        </div>
+        <div class="block">
+            <span class="word">Fun fact about me:</span>
+        </div>
+        <div class="block">
+            <span class="word">Sometimes I create web pages</span>
+        </div>
+        <div class="block">
+            <span class="word">&</span>
+        </div>
+        <div class="block">
+            <span class="word">Sometimes I work as a Data Engineer</span>
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <div class="circle-container">
+          <img src="C:\Users\antov\Downloads\foto_mia.jpg"  class="circle-img">
+        </div>
+        
+        <section id="about-me">
+            <h2>About Me</h2>
+            <div class="expandable-box collapsed" onclick="toggleExpand()">
+              <div class="expansion-icon">+</div>
+              <p>Hello! My name is Antonio Verdú 👋🏼</p>
+              <p>Let’s talk about web design, how a great design can make everything come together online 🌐. But let’s also talk about data analysis 📊, artificial intelligence 🤖, and how all of this can come together to create smart solutions. I love learning new technologies and optimizing processes because I believe there’s always a better way to do things.</p>
+              <p>On my daily basis, you’ll find me deep in thoughts dreaming about my beautiful Extremadura 💚🤍🖤, or debating ideas with my friends. And yes! You’ll also sometimes find me reading up on tech topics or just discussing with people to get different perspectives. Because in the end, working in teams and understanding the needs of others is what truly drives me to keep creating.</p>
+            </div>
+          </section> 
+          <section id="contact">
+            <div class="contact-buttons">
+              <button class="contact-button" onclick="copyEmail()">
+                <img src="C:\Users\antov\Downloads\gmail.png" alt="Gmail Logo" class="contact-icon">
+              </button>
+              <button class="contact-button" onclick="openLinkedIn()">
+                <img src="C:\Users\antov\Downloads\linkedin.png" alt="LinkedIn Logo" class="contact-icon">
+              </button>
+              <button class="contact-button" onclick="openInstagram()">
+                <img src="C:\Users\antov\Downloads\instagram.png" alt="Instagram Logo" class="contact-icon">
+              </button>
+            </div>
+          </section>   
+      </div>
+      
+      
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+          <div class="skill-box">
+            <img src="C:\Users\antov\Downloads\Python-logo-notext.svg.png" alt="Python" class="skill-logo">
+            <p>Python</p>
+          </div>
+          <div class="skill-box">
+            <img src="C:\Users\antov\Downloads\pandas.svg" alt="Pandas" class="skill-logo">
+            <p>Pandas</p>
+          </div>
+          <div class="skill-box">
+            <img src="C:\Users\antov\Downloads\Postgresql_elephant.svg.png" alt="Postgresql" class="skill-logo">
+            <p>Postgresql</p>
+          </div>
+          <div class="skill-box">
+            <img src="C:\Users\antov\Downloads\Scikit_learn_logo_small.svg.png" alt="Scikit learn" class="skill-logo">
+            <p>Scikit learn</p>
+          </div>
+          <div class="skill-box">
+            <img src="C:\Users\antov\Downloads\97_Docker_logo_logos-512.webp" alt="Docker" class="skill-logo">
+            <p>Docker</p>
+          </div>
+          <div class="skill-box">
+            <img src="C:\Users\antov\Downloads\pngegg.png" alt="HTML, CSS & JS" class="skill-logo">
+            <p>HTML, CSS & JS</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+          <div class="project-box left">
+            <div class="project-image-container">
+              <img src="C:\Users\antov\Downloads\lidar.jpg" alt="Project 1" class="project-image">
+              <div class="project-overlay">
+                <p>This project is a practice focused on the use of LiDAR technology for cars to detect the distances of objects on the road. It leverages the YOLO model (You Only Look Once) to classify the objects encountered, providing real-time detection and recognition of various obstacles, such as other vehicles, pedestrians, and road signs. The aim is to enhance autonomous driving systems by using LiDAR data in conjunction with object detection algorithms for safer navigation.</p>
+            </div>
+            </div>
+          </div>
+          <div class="project-box right">
+            <div class="project-image-container">
+              <img src="C:\Users\antov\Downloads\taxi-san-francisco-1024x566.jpg" alt="Project 2" class="project-image">
+              <div class="project-overlay">
+                <p>This project focuses on the analysis of data from San Francisco's taxis to identify trends, routes, and hot spots. The goal is to determine the most strategic locations for electric vehicle charging stations. By analyzing factors such as charging time and taxi fares, the project aims to assess the feasibility and potential profitability of switching to electric taxis in the city. The conclusion evaluates whether making the shift to electric vehicles would be a cost-effective and sustainable move for San Francisco's taxi industry.</p>
+            </div>
+            </div>
+          </div>
+          <div class="project-box left">
+            <div class="project-image-container">
+              <img src="C:\Users\antov\Downloads\KOjXRJg.jpg" alt="Project 3" class="project-image">
+              <div class="project-overlay">
+                <p>This project involves the creation of an embedding using the Beto and María models to detect emotions in individuals' tweets. The process includes data cleaning and the application of machine learning models such as K-means clustering or PCA to reduce dimensionality. The goal is to generate 2D and 3D representations of the emotional states in tweets, utilizing techniques like t-SNE or Expectation-Maximization (EM) for visualization. By analyzing the emotional content of tweets, this project aims to uncover patterns and insights into how emotions are expressed through social media.</p>
+            </div>
+            </div>
+          </div>
+        
+        </div>
+      </section>
+     
+      <section id="cv">
+        <h2>My CV</h2>
+        <img src="C:\Users\antov\Downloads\CV AVS (1)_page-0001.jpg" alt="My CV" class="cv-image" id="cv-image">
+    </section>
+      
+
+
+    <div class="final-message">
+        <p>Thank you for your time, see you soon!!!</p>
+        <p>&copy; 2024 Antonio Verdú</p>
+
+    </div>
+</body>
+</html>
+
