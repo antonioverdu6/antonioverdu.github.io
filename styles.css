@@ -1,499 +1,154 @@
-/* CSS Sencillo */
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column; /* Cambiado para que los elementos estén en orden vertical */
-  align-items: center;
-  height: 100vh;
-  background-color: #d7d7d7;
-  margin: 0;
-  padding-bottom: 100px; /* Esto crea un hueco de 100px en la parte inferior */
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Antonio Verdú</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='styles.css'></script>
+    <link rel="icon" href="C:\Users\antov\Downloads\Black Grey Classic Minimalist Elegant Personal Monogram Logo (1).png" type="image/x-icon">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+      
+        <!-- Nombre justo a la derecha del logo -->
+        <div id="name">
+          <h1>Antonio Verdú</h1>
+        </div>
+
+        <div id="menu">
+            <a href="#about-me" class="oval">About me</a>
+            <a href="#projects" class="oval">Projects</a>
+            <a href="#cv" class="oval">CV</a>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="block">
+            <span class="word">Welcome!</span>
+        </div>
+        <div class="block">
+            <span class="word">Fun fact about me:</span>
+        </div>
+        <div class="block">
+            <span class="word">Sometimes I create web pages</span>
+        </div>
+        <div class="block">
+            <span class="word">and</span>
+        </div>
+        <div class="block">
+            <span class="word">Sometimes I work as a Data Engineer</span>
+        </div>
+    </div>
+
+    <div class="profile-container">
+        <div class="circle-container">
+          <img src="C:\Users\antov\Downloads\foto_mia.jpg"  class="circle-img">
+        </div>
+        
+        <section id="about-me">
+            <h2>About Me</h2>
+            <div class="expandable-box collapsed" onclick="toggleExpand()">
+              <div class="expansion-icon">+</div>
+              <p>Hello! My name is Antonio Verdú 👋🏼</p>
+              <p>Let’s talk about web design, how a great design can make everything come together online 🌐. But let’s also talk about data analysis 📊, artificial intelligence 🤖, and how all of this can come together to create smart solutions. I love learning new technologies and optimizing processes because I believe there’s always a better way to do things.</p>
+              <p>On my daily basis, you’ll find me deep in thoughts dreaming about my beautiful Extremadura 💚🤍🖤, or debating ideas with my friends. And yes! You’ll also sometimes find me reading up on tech topics or just discussing with people to get different perspectives. Because in the end, working in teams and understanding the needs of others is what truly drives me to keep creating.</p>
+            </div>
+          </section> 
+          <section id="contact">
+            <div class="contact-buttons">
+              <button class="contact-button" onclick="copyEmail()">
+                <img src="C:\Users\antov\Downloads\gmail.png" alt="Gmail Logo" class="contact-icon">
+              </button>
+              <button class="contact-button" onclick="openLinkedIn()">
+                <img src="C:\Users\antov\Downloads\linkedin.png" alt="LinkedIn Logo" class="contact-icon">
+              </button>
+              <button class="contact-button" onclick="openInstagram()">
+                <img src="C:\Users\antov\Downloads\instagram.png" alt="Instagram Logo" class="contact-icon">
+              </button>
+            </div>
+          </section>   
+      </div>
+      
+      
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+          <div class="skill-box">
+            <img src="C:\Users\antov\Downloads\Python-logo-notext.svg.png" alt="Python" class="skill-logo">
+            <p>Python</p>
+          </div>
+          <div class="skill-box">
+            <img src="C:\Users\antov\Downloads\pandas.svg" alt="Pandas" class="skill-logo">
+            <p>Pandas</p>
+          </div>
+          <div class="skill-box">
+            <img src="C:\Users\antov\Downloads\Postgresql_elephant.svg.png" alt="Postgresql" class="skill-logo">
+            <p>Postgresql</p>
+          </div>
+          <div class="skill-box">
+            <img src="C:\Users\antov\Downloads\Scikit_learn_logo_small.svg.png" alt="Scikit learn" class="skill-logo">
+            <p>Scikit learn</p>
+          </div>
+          <div class="skill-box">
+            <img src="C:\Users\antov\Downloads\97_Docker_logo_logos-512.webp" alt="Docker" class="skill-logo">
+            <p>Docker</p>
+          </div>
+          <div class="skill-box">
+            <img src="C:\Users\antov\Downloads\pngegg.png" alt="HTML, CSS & JS" class="skill-logo">
+            <p>HTML, CSS & JS</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+          <div class="project-box left">
+            <div class="project-image-container">
+              <img src="C:\Users\antov\Downloads\lidar.jpg" alt="Project 1" class="project-image">
+              <div class="project-overlay">
+                <p>This project is a practice focused on the use of LiDAR technology for cars to detect the distances of objects on the road. It leverages the YOLO model (You Only Look Once) to classify the objects encountered, providing real-time detection and recognition of various obstacles, such as other vehicles, pedestrians, and road signs. The aim is to enhance autonomous driving systems by using LiDAR data in conjunction with object detection algorithms for safer navigation.</p>
+            </div>
+            </div>
+          </div>
+          <div class="project-box right">
+            <div class="project-image-container">
+              <img src="C:\Users\antov\Downloads\taxi-san-francisco-1024x566.jpg" alt="Project 2" class="project-image">
+              <div class="project-overlay">
+                <p>This project focuses on the analysis of data from San Francisco's taxis to identify trends, routes, and hot spots. The goal is to determine the most strategic locations for electric vehicle charging stations. By analyzing factors such as charging time and taxi fares, the project aims to assess the feasibility and potential profitability of switching to electric taxis in the city. The conclusion evaluates whether making the shift to electric vehicles would be a cost-effective and sustainable move for San Francisco's taxi industry.</p>
+            </div>
+            </div>
+          </div>
+          <div class="project-box left">
+            <div class="project-image-container">
+              <img src="C:\Users\antov\Downloads\KOjXRJg.jpg" alt="Project 3" class="project-image">
+              <div class="project-overlay">
+                <p>This project involves the creation of an embedding using the Beto and María models to detect emotions in individuals' tweets. The process includes data cleaning and the application of machine learning models such as K-means clustering or PCA to reduce dimensionality. The goal is to generate 2D and 3D representations of the emotional states in tweets, utilizing techniques like t-SNE or Expectation-Maximization (EM) for visualization. By analyzing the emotional content of tweets, this project aims to uncover patterns and insights into how emotions are expressed through social media.</p>
+            </div>
+            </div>
+          </div>
+        
+        </div>
+      </section>
+     
+      <section id="cv">
+        <h2>My CV</h2>
+        <img src="C:\Users\antov\Downloads\CV AVS (1)_page-0001.jpg" alt="My CV" class="cv-image" id="cv-image">
+    </section>
+      
+
+
+    <div class="final-message">
+        <p>Thank you for your time, see you soon!!!</p>
+        <p>&copy; 2024 Antonio Verdú</p>
+
+    </div>
+</body>
+</html>
 
-}
-
-/* Contenedor para el header */
-header {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  display: flex;
-  align-items: center; /* Alinea verticalmente el contenido */
-  background-color: #d7d7d7; /* Fondo igual al de la página */
-}
-
-
-/* Estilo del logo */
-#logo-img {
-  width: 100px; /* Ajusta el tamaño del logo */
-  height: auto;
-  cursor: pointer; /* Cambia el cursor a un puntero al pasar por encima */
-  margin-left: 15px;
-}
-
-/* Estilo para el nombre */
-#name h1 {
-  font-size: 80px; /* Tamaño ajustado para que no sea demasiado grande */
-  font-family: 'Bodoni';
-  margin: 0 0 0 20px; /* Espaciado entre el logo y el texto */
-  color: #333;
-  font-weight: bold;
-}
-
-/* Estilo del menú */
-#menu {
-  display: flex;
-  gap: 15px; /* Espaciado entre los elementos del menú */
-  margin: 0 0 0 560px; /* Espaciado entre el logo y el texto */
-
-}
-
-.oval {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 40px;
-  background-color: #ff6347;
-  color: white;
-  font-weight: bold;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: transform 0.7s ease, width 0.7s ease, height 0.7s ease, box-shadow 0.7s ease, background-color 0.7s ease;
-}
-
-.oval:hover {
-  transform: translateY(-10px); /* Sube ligeramente */
-  width: 100px;  /* Aumenta el tamaño */
-  height: 50px;  /* Aumenta el tamaño */
-  background-color: #ff4500; /* Cambia el color de fondo */
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Agrega sombra */
-}
-
-
-
-/* Contenedor principal */
-.container {
-  margin-top: 150px; /* Ajusta el margen superior para no superponer el contenido con el header */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.block {
-  display: flex;
-  justify-content: center;
-  margin: 10px 0;
-}
-
-.word {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: moveWords 1s forwards;
-  margin: 5px;
-  font-size: 60px;
-  font-family: 'Bodoni';
-}
-
-.block:nth-child(1) .word {
-  animation-delay: 0.5s;
-}
-
-.block:nth-child(2) .word {
-  animation-delay: 1.5s;
-}
-
-.block:nth-child(3) .word {
-  animation-delay: 2.5s;
-}
-
-.block:nth-child(4) .word {
-  animation-delay: 2.75s;
-}
-
-.block:nth-child(5) .word {
-  animation-delay: 3s;
-}
-
-@keyframes moveWords {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.circle-container {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden; /* Esto asegura que la imagen se recorte en forma de círculo */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease;
-}
-
-.circle-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Esto asegura que la imagen cubra todo el círculo */
-  transition: transform 0.3s ease;
-  object-fit: cover;
-}
-
-.circle-container:hover {
-  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
-}
-
-.circle-container:hover .circle-img {
-  transform: scale(1.1); /* Aumenta la imagen dentro del círculo */
-}
-
-.profile-container {
-  display: flex;
-  align-items: center; /* Centra la imagen y el texto verticalmente */
-  gap: 20px; /* Espacio entre la imagen y el texto */
-  padding: 50px;
-  margin-top: 90px;
-}
-
-.circle-container {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  overflow: hidden; /* Recorta la imagen en forma de círculo */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.3s ease;
-  margin-top: 70px;
-}
-
-.circle-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Asegura que la imagen cubra todo el círculo sin distorsionarse */
-  transition: transform 1s ease;
-}
-
-.circle-container:hover {
-  transform: scale(1.1); /* Aumenta ligeramente el tamaño del círculo */
-}
-
-.circle-container:hover .circle-img {
-  transform: scale(1.1); /* Aumenta la imagen dentro del círculo */
-}
-
-.profile-text {
-  font-family: 'Bodoni'; /* Cambia el tipo de fuente según tu preferencia */
-}
-
-.profile-text h2 {
-  margin: 0; /* Elimina el margen del encabezado */
-  font-size: 24px;
-  color: #333; /* Cambia el color de tu nombre */
-  font-family: 'Bonodi';
-}
-
-.profile-text p {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #666; /* Cambia el color del texto */
-}
-
-#about-me {
-  font-family: 'Bodoni'; /* Cambia el tipo de fuente según tu preferencia */
-  font-size: 25px;
-}
-
-.expandable-box {
-  position: relative;
-  width: 100%;
-  max-width: 600px; /* Ajusta el tamaño máximo */
-  padding: 20px;
-  margin: 20px auto;
-  background-color: #f4f4f4;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  overflow: hidden;
-  text-align: left; /* Centra el contenido del recuadro */
-}
-
-.expandable-box p {
-  margin: 10px 0;
-}
-
-.expansion-icon {
-  position: absolute;
-  top: 50%; /* Posiciona el icono verticalmente en el medio */
-  left: 50%; /* Posiciona el icono horizontalmente en el medio */
-  transform: translate(-50%, -50%); /* Ajuste para centrarlo exactamente */
-  background-color: #ff6347;
-  color: white;
-  font-weight: bold;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-  cursor: pointer;
-  opacity: 0; /* Inicialmente, el icono es invisible */
-  transition: opacity 0.3s ease; /* Hacer que el icono aparezca suavemente */
-}
-
-.expandable-box:hover .expansion-icon {
-  opacity: 1; /* Hace visible el icono al pasar el ratón */
-}
-
-.expandable-box.expanded {
-  max-height: 1000px; /* Permite que el contenido se expanda sin límite */
-  padding-top: 50px; /* Deja espacio al icono */
-}
-
-.expandable-box.collapsed {
-  max-height: 120px; /* Limita el tamaño visible del recuadro cuando está colapsado */
-  padding-top: 30px; /* Deja espacio al icono */
-}
-
-.expandable-box:hover {
-  background-color: #e0e0e0;
-}
-
-.contact-buttons {
-  display: flex;
-  flex-direction: column; /* Cambiamos a columna */
-  align-items: center;    /* Centrar botones en el eje horizontal */
-  gap: 10px;              /* Espaciado entre los botones */
-  margin-top: 90px;       /* Mueve el grupo de botones hacia abajo */
-
-}
-
-.contact-button {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Centramos el contenido dentro de cada botón */
-  padding: 0px 0px;
-  background-color: #d7d7d7;
-  border: 2px solid #d7d7d7;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px #d7d7d7;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 50px;           /* Ajustamos un ancho fijo para uniformidad */
-  height: 50px;          /* Ajustamos un alto fijo para uniformidad */
-}
-
-.contact-icon {
-  width: 30px; /* Tamaño de los iconos */
-  height: 30px;
-  margin-right: 10px;
-}
-
-.contact-button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px #d7d7d7;
-}
-
-
-
-
-#skills {
-  font-family: 'Bonodi'; /* Cambia el tipo de fuente según tu preferencia */
-  text-align: center;
-}
-
-#skills h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-  gap: 30px; /* Aumentamos el espacio entre las cajas */
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.skill-box {
-  position: relative;
-  padding: 30px; /* Aumentamos el padding dentro de cada caja */
-  background-color: #f4f4f4;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-box:hover {
-  transform: scale(1.1); /* Aumentamos la escala cuando pasamos el ratón */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.skill-logo {
-  width: 150px; /* Aumentamos el tamaño de las imágenes */
-  height: 160px;
-  margin-bottom: 20px; /* Ajustamos el margen debajo del logo */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.skill-box p {
-  font-weight: bold;
-  color: #333;
-  font-size: 1.2rem; /* Aumentamos el tamaño del texto */
-}
-#projects {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-#projects h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  font-family: 'Bonodi';
-}
-
-.project-container {
-  display: flex;
-  flex-direction: column; /* Mantener las cajas en columna */
-  gap: 40px; /* Espaciado entre cajas */
-}
-
-.project-box {
-  position: relative;
-  width: 100%; /* Las cajas ocupan el 60% del ancho */
-  opacity: 0; /* Ocultar inicialmente */
-  transform: translateY(20px); /* Desplazamiento inicial */
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.project-box.left {
-  transform: translateX(-100px); /* Mueve la caja 100px a la izquierda */
-
-}
-
-.project-box.right {
-  transform: translateX(100px); /* Mueve la caja 100px a la derecha */
-}
-
-.project-image-container {
-  position: relative;
-  width: 100%;
-  height: 400px; /* Ajusta la altura de la imagen */
-  overflow: hidden;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.project-image-container:hover {
-  transform: scale(1.05); /* Efecto de agrandamiento */
-}
-
-.project-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.project-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  opacity: 0; /* Oculto por defecto */
-  transition: opacity 0.3s ease;
-  border-radius: 10px;
-  font-family: 'Bonodi';
-  font-size: 18px; /* Hacer la letra un poco más grande */
-  line-height: 1.6; /* Espaciado entre líneas */
-  margin-bottom: 20px; /* Espaciado entre párrafos */
-  padding: 10px; /* Añadir un poco de espacio alrededor del texto */
-}
-
-.project-image-container:hover .project-overlay {
-  opacity: 1; /* Aparece al pasar el ratón */
-}
-
-.project-box.reveal {
-  opacity: 1; /* Mostrar la caja */
-  transform: translateY(0); /* Volver a su posición original */
-}
-
-/* Estilo básico para la sección de CV */
-#cv {
-  text-align: center;
-  margin: 50px;
-}
-
-#cv h2 {
-  font-size: 36px;
-  font-family: 'Arial', sans-serif;
-  margin-bottom: 20px;
-}
-
-/* Estilo para la imagen del CV */
-.cv-image {
-  width: 80%; /* Tamaño inicial de la imagen */
-  max-width: 600px;
-  transition: transform 0.3s ease; /* Transición suave para el aumento de tamaño */
-  cursor: pointer; /* Hace que el cursor cambie al pasar sobre la imagen */
-}
-
-/* Efecto de zoom al pasar el ratón */
-.cv-image:hover {
-  transform: scale(2); /* Aumenta el tamaño de la imagen al 200% */
-}
-
-
-
-/* Estilo del footer */
-footer {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  font-size: 15px;
-  color: rgb(171, 171, 171);
-  text-align: right;
-  margin: 0;
-}
-
-
-.footer-space {
-  height: 1000px; /* Ajusta la altura según el hueco que desees */
-}
-
-.final-message {
-  padding: 20px;
-  text-align: center;
-  background-color: #d7d7d7;
-  margin-top: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px #d7d7d7;
-  font-size: 18px;
-
-}
-
-.final-message p {
-  margin: 0;
-  font-style: italic;
-  color: #555;
-}
